@@ -2,18 +2,15 @@
   "name": "mirador-physical-ruler",
   "version": "1.0.0",
   "description": "A Mirador 4 plugin that displays a physical dimensions ruler using IIIF physdim service",
-  "main": "./dist/mirador-physical-ruler.js",
+  "main": "./src/index.jsx",
   "module": "./src/index.jsx",
   "type": "module",
   "files": [
-    "dist"
+    "src"
   ],
   "exports": {
     "./src": "./src/index.jsx",
-    ".": {
-      "import": "./dist/mirador-physical-ruler.es.js",
-      "require": "./dist/mirador-physical-ruler.js"
-    }
+    ".": "./src/index.jsx"
   },
   "scripts": {
     "build": "vite build",
@@ -25,9 +22,9 @@
     "test:live": "node scripts/check-live.mjs"
   },
   "peerDependencies": {
-    "mirador": "^4.2.4",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "mirador": "^4.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
