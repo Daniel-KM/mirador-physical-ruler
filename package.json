@@ -1,6 +1,6 @@
 {
   "name": "mirador-physical-ruler",
-  "version": "1.0.0",
+  "version": "1.0.1-o.1",
   "description": "A Mirador 4 plugin that displays a physical dimensions ruler using IIIF physdim service",
   "main": "./src/index.jsx",
   "module": "./src/index.jsx",
